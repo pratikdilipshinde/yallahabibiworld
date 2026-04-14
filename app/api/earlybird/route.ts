@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { appendToGoogleSheet } from "../../lib/googleSheets"
+import { appendToGoogleSheet } from "../../lib/googleSheets";
 
 type RequestBody = {
   firstName?: string;
@@ -42,11 +42,17 @@ export async function POST(request: Request) {
       { message: "Form submitted successfully." },
       { status: 200 }
     );
-  } catch (error) {
+  } catch (error: unknown) {
     console.error("Earlybird form submission failed:", error);
 
+    const details =
+      error instanceof Error ? error.message : "Unknown server error";
+
     return NextResponse.json(
-      { error: "Failed to save form data." },
+      {
+        error: "Failed to save form data.",
+        details,
+      },
       { status: 500 }
     );
   }

@@ -21,11 +21,10 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h2 className="text-2xl font-semibold text-white">
-              YourBrand
+              Yalla Habibi
             </h2>
             <p className="mt-4 text-sm leading-6 text-neutral-400">
-              Building premium digital experiences with a focus on performance,
-              design, and simplicity.
+              Entertainment & Night Life Events
             </p>
 
             {/* Social Icons */}
@@ -44,7 +43,6 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-3 text-sm">
               <li><a href="#" className="hover:text-white">About</a></li>
-              <li><a href="#" className="hover:text-white">Careers</a></li>
               <li><a href="#" className="hover:text-white">Blog</a></li>
               <li><a href="#" className="hover:text-white">Contact</a></li>
             </ul>
@@ -93,14 +91,12 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col items-center justify-between gap-4 text-sm md:flex-row">
           <p className="text-neutral-500">
-            © {new Date().getFullYear()} YourBrand. All rights reserved.
+            © {new Date().getFullYear()} Yalla Habibi. All rights reserved.
           </p>
 
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-white">Privacy</a>
-            <a href="#" className="hover:text-white">Terms</a>
-            <a href="#" className="hover:text-white">Cookies</a>
-          </div>
+          <p className="text-neutral-500">
+            Build by: Pratik Shinde
+          </p>
         </div>
 
       </div>

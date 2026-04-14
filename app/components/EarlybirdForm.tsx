@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 type FormData = {
   firstName: string;
@@ -22,8 +23,6 @@ export default function EarlybirdForm() {
   });
 
   const [loading, setLoading] = useState(false);
-  const [successMessage, setSuccessMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -39,8 +38,8 @@ export default function EarlybirdForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    setSuccessMessage("");
-    setErrorMessage("");
+
+    const loadingToastId = toast.loading("Submitting your details...");
 
     try {
       const response = await fetch("/api/earlybird", {
@@ -54,10 +53,16 @@ export default function EarlybirdForm() {
       const result = await response.json();
 
       if (!response.ok) {
-        throw new Error(result?.error || "Something went wrong.");
+        throw new Error(
+          result?.details || result?.error || "Something went wrong."
+        );
       }
 
-      setSuccessMessage("Your details have been submitted successfully.");
+      toast.dismiss(loadingToastId);
+      toast.success("🎉 Your details have been submitted successfully.", {
+        duration: 4000,
+      });
+
       setFormData({
         firstName: "",
         lastName: "",
@@ -66,8 +71,12 @@ export default function EarlybirdForm() {
         city: "",
       });
     } catch (error) {
-      setErrorMessage(
-        error instanceof Error ? error.message : "Failed to submit form."
+      toast.dismiss(loadingToastId);
+      toast.error(
+        error instanceof Error ? error.message : "Failed to submit form.",
+        {
+          duration: 5000,
+        }
       );
     } finally {
       setLoading(false);
@@ -214,22 +223,10 @@ export default function EarlybirdForm() {
                 </select>
               </div>
 
-              {successMessage ? (
-                <p className="rounded-xl bg-green-50 px-4 py-3 text-sm text-green-700">
-                  {successMessage}
-                </p>
-              ) : null}
-
-              {errorMessage ? (
-                <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-700">
-                  {errorMessage}
-                </p>
-              ) : null}
-
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full rounded-2xl bg-neutral-950 px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
+                className="w-full cursor-pointer rounded-2xl bg-neutral-950 px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {loading ? "Submitting..." : "Submit"}
               </button>
