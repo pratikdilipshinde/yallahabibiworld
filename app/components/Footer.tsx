@@ -11,66 +11,76 @@ import { MdOutlineMail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-950 text-neutral-300">
-      
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        
+    <footer className="relative bg-black text-neutral-300 overflow-hidden">
+
+      {/* Glow Background */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,0,150,0.15),_transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,_rgba(0,200,255,0.1),_transparent_60%)]" />
+
+      <div className="relative mx-auto max-w-7xl px-6 py-20">
+
         {/* Top Section */}
         <div className="grid gap-12 md:grid-cols-4">
-          
+
           {/* Brand */}
           <div>
-            <h2 className="text-2xl font-semibold text-white">
+            <h2 className="text-3xl font-bold text-white tracking-wide">
               Yalla Habibi
             </h2>
-            <p className="mt-4 text-sm leading-6 text-neutral-400">
-              Entertainment & Night Life Events
+
+            <p className="mt-4 text-sm text-neutral-400 leading-6">
+              Premium nightlife experiences, exclusive parties, and unforgettable vibes.
+              Join the movement.
             </p>
 
             {/* Social Icons */}
-            <div className="mt-6 flex gap-4">
-              <FaInstagram className="cursor-pointer hover:text-white" />
-              <SiThreads className="cursor-pointer hover:text-white" />
-              <FaFacebookF className="cursor-pointer hover:text-white" />
-              
+            <div className="mt-6 flex gap-4 text-lg">
+              <FaInstagram className="cursor-pointer hover:text-pink-500 transition" />
+              <SiThreads className="cursor-pointer hover:text-white transition" />
+              <FaFacebookF className="cursor-pointer hover:text-blue-500 transition" />
+              <FaXTwitter className="cursor-pointer hover:text-neutral-100 transition" />
+              <FaYoutube className="cursor-pointer hover:text-red-500 transition" />
             </div>
           </div>
 
-          {/* Links 1 */}
+          {/* Events */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-white">
+              Events
+            </h3>
+            <ul className="mt-4 space-y-3 text-sm">
+              <li><a href="#" className="hover:text-pink-400 transition">Upcoming Events</a></li>
+              <li><a href="#" className="hover:text-pink-400 transition">Past Nights</a></li>
+              <li><a href="#" className="hover:text-pink-400 transition">VIP Access</a></li>
+              <li><a href="#" className="hover:text-pink-400 transition">Book a Table</a></li>
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-white">
               Company
             </h3>
             <ul className="mt-4 space-y-3 text-sm">
-              <li><a href="#" className="hover:text-white">About</a></li>
-              <li><a href="#" className="hover:text-white">Blog</a></li>
-              <li><a href="#" className="hover:text-white">Contact</a></li>
+              <li><a href="#" className="hover:text-cyan-400 transition">About Us</a></li>
+              <li><a href="#" className="hover:text-cyan-400 transition">Contact</a></li>
+              <li><a href="#" className="hover:text-cyan-400 transition">Collaborate</a></li>
+              <li><a href="#" className="hover:text-cyan-400 transition">Privacy</a></li>
             </ul>
           </div>
 
-          {/* Links 2 */}
+          {/* Newsletter / CTA */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-              Resources
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-white">
+              Get On The List
             </h3>
-            <ul className="mt-4 space-y-3 text-sm">
-              <li><a href="#" className="hover:text-white">Help Center</a></li>
-              <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white">Terms</a></li>
-            </ul>
-          </div>
 
-          {/* Newsletter */}
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-              Stay Updated
-            </h3>
             <p className="mt-4 text-sm text-neutral-400">
-              Subscribe to get updates and early access.
+              Be the first to know about exclusive drops, VIP invites & events.
             </p>
 
-            <div className="mt-4 flex items-center gap-2 rounded-xl border border-neutral-700 p-2">
-              <MdOutlineMail size={18} />
+            <div className="mt-4 flex items-center gap-2 rounded-xl border border-neutral-700 bg-neutral-900/60 px-3 py-2">
+              <MdOutlineMail size={18} className="text-neutral-400" />
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -78,15 +88,15 @@ export default function Footer() {
               />
             </div>
 
-            <button className="mt-3 w-full rounded-xl bg-white py-2 text-sm font-medium text-black hover:bg-neutral-200">
-              Subscribe
+            <button className="mt-4 w-full rounded-xl bg-gradient-to-r from-pink-500 to-cyan-500 py-2 text-sm font-semibold text-white hover:opacity-90 transition">
+              Join Now
             </button>
           </div>
 
         </div>
 
         {/* Divider */}
-        <div className="my-10 h-px bg-neutral-800" />
+        <div className="my-12 h-px bg-neutral-800" />
 
         {/* Bottom */}
         <div className="flex flex-col items-center justify-between gap-4 text-sm md:flex-row">
@@ -95,7 +105,7 @@ export default function Footer() {
           </p>
 
           <p className="text-neutral-500">
-            Build by: Pratik Shinde
+            Built with 🔥 by Pratik Shinde
           </p>
         </div>
 
