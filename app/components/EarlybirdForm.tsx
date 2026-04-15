@@ -118,7 +118,7 @@ export default function EarlybirdForm() {
                   Reserve your spot
                 </h3>
                 <p className="mt-3 text-sm leading-6 text-white/70">
-                  Fill in your details to get DYSTINCT event announcements,
+                  Fill in your details to get DYSTINCT's event,
                   early access, and city-specific invites.
                 </p>
               </div>
@@ -265,7 +265,7 @@ export default function EarlybirdForm() {
 
             <p className="mt-4 max-w-md text-sm leading-7 text-white/75 sm:text-base">
               Join the Yalla Habibi early bird list for first access to
-              exclusive DYSTINCT events, premium drops, city launches, and VIP
+              exclusive DYSTINCT events, premium drops and VIP
               experiences.
             </p>
 
@@ -273,15 +273,15 @@ export default function EarlybirdForm() {
               <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-xl">
                 Priority invites to curated DYSTINCT events
               </div>
-              <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-xl">
+              {/* <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-xl">
                 Early updates for new city launches
-              </div>
+              </div> */}
               <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-xl">
                 Guest list access, VIP drops, and exclusive announcements
               </div>
             </div>
 
-            <div className="mt-10 grid grid-cols-3 gap-3">
+            {/* <div className="mt-10 grid grid-cols-3 gap-3">
               <div className="rounded-2xl border border-white/15 bg-white/10 p-4 text-center backdrop-blur-xl">
                 <p className="text-xl font-semibold text-white">4</p>
                 <p className="mt-1 text-xs uppercase tracking-[0.2em] text-white/60">
@@ -300,7 +300,7 @@ export default function EarlybirdForm() {
                   Culture
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
 
           
