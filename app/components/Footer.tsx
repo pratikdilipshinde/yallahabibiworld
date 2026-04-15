@@ -25,7 +25,7 @@ export default function Footer() {
       <div className="relative mx-auto max-w-7xl px-6 py-10">
 
         {/* Top Section */}
-        <div className="grid gap-12 md:grid-cols-4">
+        <div className="grid gap-12 md:grid-cols-3">
 
           {/* Brand */}
           <div>
@@ -109,8 +109,10 @@ export default function Footer() {
             
           </div>
 
+          <div></div>
+
           {/* Events */}
-          <div>
+          {/* <div>
             <h3 className="text-sm font-semibold uppercase tracking-widest text-white">
               Events
             </h3>
@@ -120,10 +122,10 @@ export default function Footer() {
               <li><a href="/" className="hover:text-pink-400 transition">VIP Access</a></li>
               <li><a href="/" className="hover:text-pink-400 transition">Book a Table</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Company */}
-          <div>
+          {/* <div>
             <h3 className="text-sm font-semibold uppercase tracking-widest text-white">
               Company
             </h3>
@@ -133,7 +135,7 @@ export default function Footer() {
               <li><a href="/" className="hover:text-cyan-400 transition">Collaborate</a></li>
               <li><a href="/" className="hover:text-cyan-400 transition">Privacy</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Newsletter / CTA */}
           <div>
