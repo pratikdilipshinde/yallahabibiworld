@@ -94,66 +94,18 @@ export default function EarlybirdForm() {
 
       <div className="relative mx-auto max-w-6xl">
         <div className="grid overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl md:grid-cols-2">
-          <div className="border-b border-white/10 bg-neutral-950/70 px-6 py-10 sm:px-8 md:border-b-0 md:border-r md:px-10 md:py-12">
-            <div className="inline-flex items-center gap-2 rounded-full border border-pink-500/30 bg-pink-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.25em] text-pink-300">
-              <HiOutlineSparkles className="text-sm" />
-              Exclusive Access
-            </div>
-
-            <h2 className="mt-6 max-w-md text-3xl font-semibold leading-tight text-white sm:text-4xl">
-              Enter the night before everyone else.
-            </h2>
-
-            <p className="mt-4 max-w-md text-sm leading-7 text-neutral-300 sm:text-base">
-              Join the Yalla Habibi guest list for first access to exclusive
-              nightlife events, premium drops, city launches, and VIP
-              experiences.
-            </p>
-
-            <div className="mt-8 space-y-4 text-sm text-neutral-200">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                Priority invites to curated nightlife events
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                Early updates for new city launches
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                Guest list access, VIP drops, and exclusive announcements
-              </div>
-            </div>
-
-            <div className="mt-10 grid grid-cols-3 gap-3">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
-                <p className="text-xl font-semibold text-white">4</p>
-                <p className="mt-1 text-xs uppercase tracking-[0.2em] text-neutral-400">
-                  Cities
-                </p>
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
-                <p className="text-xl font-semibold text-white">VIP</p>
-                <p className="mt-1 text-xs uppercase tracking-[0.2em] text-neutral-400">
-                  Access
-                </p>
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
-                <p className="text-xl font-semibold text-white">Night</p>
-                <p className="mt-1 text-xs uppercase tracking-[0.2em] text-neutral-400">
-                  Culture
-                </p>
-              </div>
-            </div>
-          </div>
+          
 
           <div className="bg-white px-6 py-10 text-neutral-900 sm:px-8 md:px-10 md:py-12">
             <div className="mb-8">
               <p className="text-sm font-medium uppercase tracking-[0.25em] text-pink-500">
-                Guest List Registration
+                Early Bird Registration
               </p>
               <h3 className="mt-3 text-3xl font-semibold text-neutral-950">
                 Reserve your spot
               </h3>
               <p className="mt-3 text-sm leading-6 text-neutral-600">
-                Fill in your details to get event announcements, early access,
+                Fill in your details to get DYSTINCT-event announcements, early access,
                 and city-specific invites.
               </p>
             </div>
@@ -275,7 +227,7 @@ export default function EarlybirdForm() {
                 disabled={loading}
                 className="w-full rounded-2xl bg-gradient-to-r from-pink-500 to-cyan-500 px-5 py-3 text-sm font-semibold text-pink-50 cursor-pointer shadow-[0_10px_30px_rgba(236,72,153,0.25)] transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
               >
-                {loading ? "Submitting..." : "Join the Guest List"}
+                {loading ? "Submitting..." : "Join the List"}
               </button>
 
               <p className="text-center text-xs leading-5 text-neutral-500">
@@ -283,6 +235,55 @@ export default function EarlybirdForm() {
                 invites, and nightlife announcements from Yalla Habibi.
               </p>
             </form>
+          </div>
+          <div className="border-b border-white/10 bg-neutral-950/70 px-6 py-10 sm:px-8 md:border-b-0 md:border-r md:px-10 md:py-12">
+            <div className="inline-flex items-center gap-2 rounded-full border border-pink-500/30 bg-pink-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.25em] text-pink-300">
+              <HiOutlineSparkles className="text-sm" />
+              Exclusive
+            </div>
+
+            <h2 className="mt-6 max-w-md text-3xl font-semibold leading-tight text-white sm:text-4xl">
+              Enter the night before everyone else.
+            </h2>
+
+            <p className="mt-4 max-w-md text-sm leading-7 text-neutral-300 sm:text-base">
+              Join the Yalla Habibi early bird list for first access to exclusive
+              DYSTINCT event, premium drops, city launches, and VIP
+              experiences.
+            </p>
+
+            <div className="mt-8 space-y-4 text-sm text-neutral-200">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                Priority invites to curated DYSTINCT event
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                Early updates for new city launches
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                Guest list access, VIP drops, and exclusive announcements
+              </div>
+            </div>
+
+            <div className="mt-10 grid grid-cols-3 gap-3">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                <p className="text-xl font-semibold text-white">4</p>
+                <p className="mt-1 text-xs uppercase tracking-[0.2em] text-neutral-400">
+                  Cities
+                </p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                <p className="text-xl font-semibold text-white">VIP</p>
+                <p className="mt-1 text-xs uppercase tracking-[0.2em] text-neutral-400">
+                  Access
+                </p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
+                <p className="text-xl font-semibold text-white">Night</p>
+                <p className="mt-1 text-xs uppercase tracking-[0.2em] text-neutral-400">
+                  Culture
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

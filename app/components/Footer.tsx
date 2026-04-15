@@ -4,10 +4,15 @@ import {
   FaInstagram,
   FaFacebookF,
   FaYoutube,
+  FaTiktok,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiThreads } from "react-icons/si";
 import { MdOutlineMail } from "react-icons/md";
+import Link from "next/link";
+import Image from "next/image";
+
+
 
 export default function Footer() {
   return (
@@ -24,9 +29,16 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <h2 className="text-3xl font-bold text-white tracking-wide">
-              Yalla Habibi
-            </h2>
+            <Link href="/" aria-label="BLTDIF Home" className="inline-flex">
+              <Image
+                src="/images/YallaHabibi-logo.png"
+                alt="YallaHabibi"
+                width={370}
+                height={150}
+                className="h-15 w-auto select-none md:h-16"
+                priority
+              />
+            </Link>
 
             <p className="mt-4 text-sm text-neutral-400 leading-6">
               Premium nightlife experiences, exclusive parties, and unforgettable vibes.
@@ -34,13 +46,67 @@ export default function Footer() {
             </p>
 
             {/* Social Icons */}
-            <div className="mt-6 flex gap-4 text-lg">
+            {/* <div className="mt-6 flex gap-4 text-lg">
               <FaInstagram className="cursor-pointer hover:text-pink-500 transition" />
               <SiThreads className="cursor-pointer hover:text-white transition" />
               <FaFacebookF className="cursor-pointer hover:text-blue-500 transition" />
               <FaXTwitter className="cursor-pointer hover:text-neutral-100 transition" />
               <FaYoutube className="cursor-pointer hover:text-red-500 transition" />
+              <FaTiktok className="cursor-pointer text-neutral-300 transition hover:text-pink-500" />
+            </div> */}
+            <div className="mt-6 flex gap-4 text-lg">
+
+                <a
+                    href="https://www.instagram.com/yallahabibi_us?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FaInstagram className="cursor-pointer transition hover:text-pink-500 hover:drop-shadow-[0_0_8px_rgba(236,72,153,0.8)]" />
+                </a>
+
+                {/* <a
+                    href="https://threads.net/@yourusername"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <SiThreads className="cursor-pointer transition hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]" />
+                </a> */}
+
+                <a
+                    href="https://www.facebook.com/profile.php?id=61570427764520&mibextid=wwXIfr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FaFacebookF className="cursor-pointer transition hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
+                </a>
+
+                {/* <a
+                    href="https://twitter.com/yourusername"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FaXTwitter className="cursor-pointer transition hover:text-neutral-100 hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]" />
+                </a> */}
+
+                <a
+                    href="https://youtube.com/@yallahabibiexperience?si=-mH7K89EDD2UG7bz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FaYoutube className="cursor-pointer transition hover:text-red-500 hover:drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
+                </a>
+
+                <a
+                    href="https://www.tiktok.com/@yallahabibi_us?_r=1&_t=ZT-95UjGcvPIDN"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FaTiktok className="cursor-pointer transition hover:text-pink-500 hover:drop-shadow-[0_0_8px_rgba(236,72,153,0.8)]" />
+                </a>
+
             </div>
+
+            
           </div>
 
           {/* Events */}
