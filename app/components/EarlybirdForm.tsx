@@ -105,7 +105,7 @@ export default function EarlybirdForm() {
       <div className="absolute left-0 top-1/3 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-6xl">
-        <div className="grid overflow-hidden rounded-[2rem] border border-white/20 bg-white/8 shadow-[0_20px_80px_rgba(0,0,0,0.45)] backdrop-blur-2xl md:grid-cols-2">
+        <div className="grid overflow-hidden rounded-[2rem] border border-white/20 bg-white/8 shadow-[0_20px_80px_rgba(0,0,0,0.45)] backdrop-blur-sm md:grid-cols-2">
           
           {/* Left Form */}
           <div className="bg-white/18 px-6 py-10 backdrop-blur-2xl sm:px-8 md:px-10 md:py-12">
@@ -118,7 +118,7 @@ export default function EarlybirdForm() {
                   Reserve your spot
                 </h3>
                 <p className="mt-3 text-sm leading-6 text-white/70">
-                  Fill in your details to get DYSTINCT event, early access tickets,
+                  Fill in your details to get DYSTINCT event early access tickets
                    and city-specific invites. Locations coming soon.
 
                 </p>
@@ -141,7 +141,7 @@ export default function EarlybirdForm() {
                       onChange={handleChange}
                       required
                       placeholder="Enter first name"
-                      className="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-white/85 outline-none backdrop-blur-md transition focus:border-white/40 focus:bg-white/15 focus:ring-2 focus:ring-white/20"
+                      className="w-full rounded-2xl border border-white/70 bg-white/30 px-4 py-3 text-white placeholder:text-white/85 outline-none backdrop-blur-3xl transition focus:border-white/40 focus:bg-white/15 focus:ring-2 focus:ring-white/20"
                     />
                   </div>
 
@@ -160,7 +160,7 @@ export default function EarlybirdForm() {
                       onChange={handleChange}
                       required
                       placeholder="Enter last name"
-                      className="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-white/85 outline-none backdrop-blur-md transition focus:border-white/40 focus:bg-white/15 focus:ring-2 focus:ring-white/20"
+                      className="w-full rounded-2xl border border-white/70 bg-white/30 px-4 py-3 text-white placeholder:text-white/85 outline-none backdrop-blur-3xl transition focus:border-white/40 focus:bg-white/15 focus:ring-2 focus:ring-white/20"
                     />
                   </div>
                 </div>
@@ -172,7 +172,7 @@ export default function EarlybirdForm() {
                   >
                     Email
                   </label>
-                  <div className="flex items-center gap-3 rounded-2xl border border-white/20 bg-white/10 px-4 py-3 backdrop-blur-md transition focus-within:border-white/40 focus-within:bg-white/15 focus-within:ring-2 focus-within:ring-white/20">
+                  <div className="flex items-center gap-3 rounded-2xl border border-white/70 bg-white/30 px-4 py-3 backdrop-blur-3xl transition focus-within:border-white/40 focus-within:bg-white/15 focus-within:ring-2 focus-within:ring-white/20">
                     <MdOutlineMail className="text-lg text-white/85" />
                     <input
                       id="email"
@@ -194,7 +194,7 @@ export default function EarlybirdForm() {
                   >
                     Phone Number
                   </label>
-                  <div className="flex items-center gap-3 rounded-2xl border border-white/20 bg-white/10 px-4 py-3 backdrop-blur-md transition focus-within:border-white/40 focus-within:bg-white/15 focus-within:ring-2 focus-within:ring-white/20">
+                  <div className="flex items-center gap-3 rounded-2xl border border-white/70 bg-white/30 px-4 py-3 backdrop-blur-3xl transition focus-within:border-white/40 focus-within:bg-white/15 focus-within:ring-2 focus-within:ring-white/20">
                     <MdOutlinePhoneIphone className="text-lg text-white/85" />
                     <input
                       id="phoneNumber"
@@ -216,7 +216,7 @@ export default function EarlybirdForm() {
                   >
                     City
                   </label>
-                  <div className="flex items-center gap-3 rounded-2xl border border-white/20 bg-white/10 px-4 py-3 backdrop-blur-md transition focus-within:border-white/40 focus-within:bg-white/15 focus-within:ring-2 focus-within:ring-white/20">
+                  <div className="flex items-center gap-3 rounded-2xl border border-white/70 bg-white/30 px-4 py-3 backdrop-blur-3xl transition focus-within:border-white/40 focus-within:bg-white/15 focus-within:ring-2 focus-within:ring-white/20">
                     <CiLocationOn className="text-xl text-white/85" />
                     <select
                       id="city"
@@ -271,13 +271,13 @@ export default function EarlybirdForm() {
             </p>
 
             <div className="mt-8 space-y-4 text-sm text-white/85">
-              <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-xl">
+              <div className="rounded-2xl border border-white/70 bg-white/30 p-4 backdrop-blur-3xl">
                 Priority invites to curated DYSTINCT events
               </div>
               {/* <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-xl">
                 Early updates for new city launches
               </div> */}
-              <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-xl">
+              <div className="rounded-2xl border border-white/70 bg-white/30 p-4 backdrop-blur-3xl">
                 Early bird access, VIP drops, and exclusive announcements
               </div>
             </div>
