@@ -23,7 +23,7 @@ export default function Hero() {
           alt="Hero Mobile"
           width={800}
           height={1000}
-          className="w-full h-[100vh] object-cover"
+          className="w-full h-[70vh] object-cover"
           priority
         />
       </div>
