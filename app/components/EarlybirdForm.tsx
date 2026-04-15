@@ -118,8 +118,9 @@ export default function EarlybirdForm() {
                   Reserve your spot
                 </h3>
                 <p className="mt-3 text-sm leading-6 text-white/70">
-                  Fill in your details to get DYSTINCT's event,
-                  early access, and city-specific invites.
+                  Fill in your details to get DYSTINCT event, early access tickets,
+                   and city-specific invites. Locations coming soon.
+
                 </p>
               </div>
 
@@ -277,7 +278,7 @@ export default function EarlybirdForm() {
                 Early updates for new city launches
               </div> */}
               <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-xl">
-                Guest list access, VIP drops, and exclusive announcements
+                Early bird access, VIP drops, and exclusive announcements
               </div>
             </div>
 
