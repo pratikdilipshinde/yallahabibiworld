@@ -11,7 +11,7 @@ export default function Hero() {
           alt="Hero Desktop"
           width={1920}
           height={800}
-          className="w-full h-[100vh] object-cover"
+          className="w-full h-[100vh] object-cover mt-6"
           priority
         />
       </div>

@@ -103,6 +103,13 @@ export default function Footer() {
                 >
                     <FaTiktok className="cursor-pointer transition hover:text-pink-500 hover:drop-shadow-[0_0_8px_rgba(236,72,153,0.8)]" />
                 </a>
+                <a
+                    href="mailto:yallahabibila@hotmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <MdOutlineMail className="cursor-pointer transition hover:text-red-500 hover:drop-shadow-[0_0_8px_rgba(236,72,153,0.8)]" />
+                </a>
 
             </div>
 
@@ -172,9 +179,9 @@ export default function Footer() {
             © {new Date().getFullYear()} Yalla Habibi. All rights reserved.
           </p>
 
-          <p className="text-neutral-500">
+          {/* <p className="text-neutral-500">
             Built with 🔥
-          </p>
+          </p> */}
         </div>
 
       </div>
