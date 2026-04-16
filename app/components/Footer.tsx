@@ -156,7 +156,7 @@ export default function Footer() {
               />
             </div> */}
 
-            <button className="mt-4 w-full rounded-xl bg-gradient-to-r from-pink-500 to-cyan-500 py-2 text-sm font-semibold text-white hover:opacity-90 transition">
+            <button className="mt-4 w-full rounded-xl bg-gradient-to-r from-pink-500 to-indigo-500 py-2 text-sm font-semibold text-white hover:opacity-90 transition">
               Join Now
             </button>
           </div>
@@ -173,7 +173,7 @@ export default function Footer() {
           </p>
 
           <p className="text-neutral-500">
-            Built with 🔥 by Pratik Shinde
+            Built with 🔥
           </p>
         </div>
 

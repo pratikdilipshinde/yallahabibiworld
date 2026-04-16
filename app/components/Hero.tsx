@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="w-full">
+    <section className="w-full pt-5 bg-white">
       
       {/* Desktop Image */}
       <div className="hidden md:block">
